@@ -1,21 +1,21 @@
 // date: 1 Aug, 2022
 const bioData = [
     {
-        name: 'nxt lnk',
-        username: 'nxtlnk.vercel.app',
-        url: 'https://nxtlnk.vercel.app',
-        titleImg: true,
-        avatar: '/avatar.png',
+        name: 'Wendale',
+        username: '',
+        url: '',
+        titleImg: false,
+        avatar: '/peeps-avatar-alpha.png',
         nftAvatar: true,
-        description: 'Custom bio links for creatives who love coding. Made this first to use for my own weblinks vjy.me/lnk. ',
+        description: 'Hi！这里是设计师 Wendale 的个人链接。Just for fun！',
         descShow: true,
-        subdesc: 'Use this template and deploy on vercel for free',
+        subdesc: '分享我所喜爱的',
         subdescShow: true,
         newProductUrl: 'https://3dicons.co',
-        newProduct: true,
-        author: 'realvjy',
-        authorURL: 'https://twitter.com/realvjy',
-        footerText: 'made by'
+        newProduct: false,
+        author: '',
+        authorURL: '',
+        footerText: '© Wendale'
     },
 ];
 

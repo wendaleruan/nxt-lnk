@@ -139,7 +139,7 @@ const webLinks = [
     {
         title: 'Buy Me a Coffee',
         url: 'https://www.buymeacoffee.com/realvjy',
-        type: 'other',
+        type: 'test',
         icon: '/bmc.png',
         on: true
     },

@@ -64,6 +64,11 @@ const Links = () => {
     return el.type === "other" && el.on
   });
 
+   // Get data for test section
+   const test = allLinks.filter((el) => {
+    return el.type === "test" && el.on
+  });
+
   return (
     <LinkWrapper>
       <LinkContainer>
@@ -189,6 +194,35 @@ const Links = () => {
             </LinkSection>
             {/* End Other Section */}
 
+            {/* test Section */}
+            <LinkSection>
+              <h3>{test[0].type}</h3>
+              {/* BioData.js > newProduct == true */}
+              {/* New Section will render once newProduct == true */}
+              {(newProduct) ? <NewSection>
+                <a href={newProductUrl} target="_blank" rel="noreferrer">
+                  <img
+                    src={'/newproduct.png'}
+                    className="newproduct"
+                  />
+                </a>
+              </NewSection> : ''
+              }
+              {/* End Biodata.js, You can move this section anywhere */}
+              {
+                test.map((i) => {
+                  return (
+                    <a href={i.url} key={i.title} target="_blank" rel="noreferrer">
+                      <LinkBox>
+                        <LinkTitle><img src={i.icon} /> {i.title}</LinkTitle> <NewUp />
+                      </LinkBox>
+                    </a>
+                  )
+                })
+              }
+            </LinkSection>
+            {/* End test Section */}
+
           </WebLinkWrap>
           {/* End Weblinks */}
         </TopPart>
@@ -309,7 +343,7 @@ const LinkBio = styled.div`
     display: flex;
     flex-direction: column;
     h1{
-      font-size: 22px;
+      font-size: 18px;
       line-height: 30px;
       font-weight: 500;
       letter-spacing: -0.6px;
